@@ -1,0 +1,12 @@
+*.md
+.env
+__pycache__/
+venv/
+data/*
+!data/.gitignore
+models/*
+!models/.gitignore
+qdrantdb/*
+!qdrantdb/.gitignore
+logs/*
+!logs/.gitignore

@@ -1,0 +1,15 @@
+python-dotenv
+youtube-transcript-api
+google-api-python-client
+llama-index
+llama-index-core
+llama-index-retrievers-bm25
+llama-index-vector-stores-qdrant
+llama-index-embeddings-huggingface
+llama-index-embeddings-fastembed
+sentence-transformers
+llama-cpp-python
+qdrant-client
+fastapi
+uvicorn
+redis
