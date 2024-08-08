@@ -67,8 +67,8 @@ def generate_response(query, llm_client, indices, refine_answer: bool = False):
         retrieved_docs = search_manager.retrieve(multiple_queries)
         reranked_docs = search_manager.rerank_with_crossencoder(
             query, retrieved_docs)
-        answer = llm_client.create_refine_answer(reranked_docs)
-        return answer
+        answer = llm_client.create_refine_answer(query, reranked_docs)
+        return answer, "https://www.youtube.com/@hubermanlab"
     else:
         context, urls = search_manager.search(multiple_queries)
         answer = llm_client.generate_contexed_based_answer(query, context)
