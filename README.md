@@ -82,7 +82,7 @@ The LLM used in this project is the quantized version of `Llama-3-8B-Instruct`. 
 * Qdrant is used as the vector database.
 * LlamaIndex is used as the framework to build this chatbot.
 * Docker Compose is used to run Qdrant and Redis.
-* Redis Streams is used for handling real-time communication.
+* Redis Streams is used for handling real-time communication and also keep track of chat history(memory).
 * FastAPI and WebSockets are used to send messages between the client and server in real time.
 
 ### To do
